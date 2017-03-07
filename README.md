@@ -2,13 +2,13 @@
 
 ## Creates a single Docker container lets you run both Python 2.7.13 and Python 3.6.0
 
-TL;DR: `$ docker build -t python-2-and-3 .`
+TL;DR:`$ docker build -t python-2-and-3 .`
 
-Starts with `python:3.6.0-alpine` and then installs most of `python:2.7.13-alpine` on top
+Starts with`python:3.6.0-alpine`and then installs most of`python:2.7.13-alpine`on top
 to allow you to choose either Python version at runtime via: python2, python3, pip2, pip3
 
-NOTE: *site-packages are separate* so `pip2 install pkgname` does **not** make `pkgname` available to Python 3.
-This means that you would also need to `pip3 install pkgname` to make `pkgname` accessable from both versions of Python.
+NOTE: *site-packages are separate* so`pip2 install pkgname`does **not** make`pkgname`available to Python 3.
+This means that you would also need to`pip3 install pkgname`to make`pkgname`accessable from both versions of Python.
 
 ```sh
 $ mkdir python-2-and-3
