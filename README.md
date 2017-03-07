@@ -20,19 +20,19 @@ $ docker images  # python-2-and-3 should be at the top of the list
 
 # Do some optional interactive testing...
 $ docker run -it python-2-and-3 /bin/sh
-/ # python  -V  # Python 2.7.13
-/ # python2 -V  # Python 2.7.13
-/ # python3 -V  # Python 3.6.0
+\# python  -V  # Python 2.7.13
+\# python2 -V  # Python 2.7.13
+\# python3 -V  # Python 3.6.0
 
-/ # pip  -V     # pip 9.0.1 from /usr/local/lib/python2.7/site-packages (python 2.7)
-/ # pip2 -V     # pip 9.0.1 from /usr/local/lib/python2.7/site-packages (python 2.7)
-/ # pip3 -V     # pip 9.0.1 from /usr/local/lib/python3.6/site-packages (python 3.6)
+\# pip  -V     # pip 9.0.1 from /usr/local/lib/python2.7/site-packages (python 2.7)
+\# pip2 -V     # pip 9.0.1 from /usr/local/lib/python2.7/site-packages (python 2.7)
+\# pip3 -V     # pip 9.0.1 from /usr/local/lib/python3.6/site-packages (python 3.6)
 
-/ # SCRIPT="import platform ; print(platform.python_version())"
-/ # python  -c "$SCRIPT"  # 2.7.13
-/ # python2 -c "$SCRIPT"  # 2.7.13
-/ # python3 -c "$SCRIPT"  # 3.6.0
+\# SCRIPT="import platform ; print(platform.python_version())"
+\# python  -c "$SCRIPT"  # 2.7.13
+\# python2 -c "$SCRIPT"  # 2.7.13
+\# python3 -c "$SCRIPT"  # 3.6.0
 
-/ # exit
+\# exit
 $
 ```
