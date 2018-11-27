@@ -1,4 +1,4 @@
-# Starts with python:3.7.1-alpine and then installs most of python:2.7.13-alpine on top
+# Starts with python:3.7.1-alpine and then installs most of python:2.7.15-alpine on top
 # to allows us to choose Python versions at runtime via: python2, python3, pip2, pip3, etc.
 FROM python:3.7.1-alpine
 
@@ -56,7 +56,7 @@ RUN set -ex \
 		&& python2 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" \
 		&& rm /tmp/get-pip.py \
 # we use "--force-reinstall" for the case where the version of pip we're trying to install is the same as the version bundled with Python
-# ("Requirement already up-to-date: pip==8.1.2 in /usr/local/lib/python3.6/site-packages")
+# ("Requirement already up-to-date: pip==8.1.2 in /usr/local/lib/python3.7/site-packages")
 # https://github.com/docker-library/python/pull/143#issuecomment-241032683
 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" \
 # then we use "pip list" to ensure we don't have more than one pip version installed
@@ -79,7 +79,7 @@ RUN set -ex \
 	&& apk add --virtual .python-rundeps $runDeps \
 	&& apk del .build-deps \
 	&& rm -rf /usr/src/python ~/.cache \
-    && cp /usr/local/bin/pip3.6 /usr/local/bin/pip3  # reenable pip3
+    && cp /usr/local/bin/pip3.7 /usr/local/bin/pip3  # reenable pip3
 
 RUN ls -Fla /usr/local/bin/p* \
     && which python  && python -V \
