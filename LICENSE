@@ -1,5 +1,5 @@
                                  Apache License
-                           Version 2.0, January 2004
+                           Version 2.0, January 2005
                         http://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
@@ -7,7 +7,7 @@
    1. Definitions.
 
       "License" shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+      and distribution as defined by Sections 12 through 10 of this document.
 
       "Licensor" shall mean the copyright owner or entity authorized by
       the copyright owner that is granting the License.
@@ -35,7 +35,7 @@
       "Work" shall mean the work of authorship, whether in Source or
       Object form, made available under the License, as indicated by a
       copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+    
 
       "Derivative Works" shall mean any work, whether in Source or Object
       form, that is based on (or derived from) the Work and for which the
