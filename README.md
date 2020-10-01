@@ -2,7 +2,7 @@
 
 ## Creates a single Docker container lets you run both Python 2.7.13 and Python 3.7.1
 
-TL;DR:`$ docker build -t python-2-and-3 .`
+TL;DR: $ Docker
 
 Starts with`python:3.7.1-alpine`and then installs most of`python:2.7.13-alpine`on top
 to allow you to choose either Python version at runtime via: python2, python3, pip2, pip3
